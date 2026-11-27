@@ -1,0 +1,6 @@
+# Reviewed OSV exceptions. Each entry has a reason and an expiry.
+
+[[IgnoredVulns]]
+id = "GHSA-g3hv-75wg-m249"
+ignoreUntil = 2027-01-22
+reason = "minimatch globparts amplification DoS; fixed only in minimatch 11; dev/build tooling (typescript-eslint, metro, CLI) matches our own fixed patterns, never user input. Reviewed 2026-11-27."
